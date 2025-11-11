@@ -1,5 +1,5 @@
 # Ex.05 Design a Website for Server Side Processing
-## Date: 09-11-2025
+## Date: 10-11-2025
 
 ## AIM:
  To design a website to calculate the power of a lamp filament in an incandescent bulb in the server side. 
@@ -34,6 +34,7 @@ Publish the website in the given URL.
 ## PROGRAM :
 ```
 math.html
+
 <html>
 <head>
     <meta charset='utf-8'>
@@ -80,6 +81,19 @@ math.html
 
 ```
 views.py
+from django.contrib import admin
+from django.urls import path
+from mathapp import views
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('powerofbulb/',views.power_calculate,name="powerofbulb"),
+    path('',views.power_calculate,name="powerofbulb")
+]
+```
+
+```
+urls.py
+
 from django.shortcuts import render
 def power_calculate(request):
     context = {}
@@ -93,28 +107,14 @@ def power_calculate(request):
     return render(request, 'mathapp/math.html', context)
 ```
 
-```
-urls.py
-
-from django.contrib import admin
-from django.urls import path
-from mathapp import views
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('powerofbulb/',views.power_calculate,name="powerofbulb"),
-    path('',views.power_calculate,name="powerofbulb")
-]
-```
-
 
 
 ## SERVER SIDE PROCESSING:
-<img width="1241" height="272" alt="Screenshot 2025-11-09 230202" src="https://github.com/user-attachments/assets/71f3dd31-bad9-46d4-809b-c183a6eb113d" />
 
+![alt text](<Screenshot 2025-11-12 001136-1.png>)
 
 ## HOMEPAGE:
-<img width="1246" height="739" alt="Screenshot 2025-11-09 230221" src="https://github.com/user-attachments/assets/df6c103b-1ac6-4bb1-9b93-758c32bb14da" />
-
+![alt text](<Screenshot 2025-11-12 001101-1.png>)
 
 ## RESULT:
 The program for performing server side processing is completed successfully.
