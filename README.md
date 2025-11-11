@@ -111,10 +111,12 @@ def power_calculate(request):
 
 ## SERVER SIDE PROCESSING:
 
-![alt text](<Screenshot 2025-11-12 001136-1.png>)
+<img width="1236" height="299" alt="Screenshot 2025-11-12 001136" src="https://github.com/user-attachments/assets/d512cc06-f933-40f1-861c-7f92b8ba10fa" />
+
 
 ## HOMEPAGE:
-![alt text](<Screenshot 2025-11-12 001101-1.png>)
+
+<img width="1890" height="1108" alt="Screenshot 2025-11-12 001101" src="https://github.com/user-attachments/assets/ebe6b124-85ba-4d59-b815-4f42061577af" />
 
 ## RESULT:
 The program for performing server side processing is completed successfully.
